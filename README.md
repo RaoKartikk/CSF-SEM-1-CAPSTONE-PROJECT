@@ -28,4 +28,4 @@ This is a static website and requires no complex installation.
 
     A live preview of the deployed portfolio will be included here.
 
-![Screenshot of  f's Portfolio](screenshot.png)
+![Screenshot of  Kartik's Portfolio](screenshot.png)
