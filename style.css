@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0e0e16;
+  color: #e6e6e6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #00e6b8;
+  letter-spacing: 1px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #444;
+}
+
+.header {
+  background: #11131e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.7);
+}
+
+.header-div-1 {
+  text-align: center;
+}
+
+.nav1 nav {
+  margin-top: 10px;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: #9fd3ff;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.nav1 a:hover {
+  color: #00e6b8;
+}
+
+.about-div {
+  background: #141726;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 100px;
+  border-left: 4px solid #00e6b8;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 220px;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #00e6b8;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  background: #1e2235;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.project-article {
+  background: #141726;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.project-article div {
+  background: #1e2235;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #00e6b8;
+}
+
+.project-article a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #000;
+  background: #00e6b8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.project-article a:hover {
+  background: #41ffcf;
+}
+
+.skills-article {
+  background: #141726;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.skills-article table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills-article th,
+.skills-article td {
+  padding: 10px;
+  border-bottom: 2px solid #333;
+  font-size: 15px;
+}
+
+.skills-article thead th {
+  background: #00e6b8;
+  color: #000;
+  font-weight: 700;
+}
+
+article {
+  background: #141726;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1e2235;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: auto;
+}
+
+form label {
+  font-weight: 600;
+  color: #00e6b8;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 2px solid #00e6b8;
+  border-radius: 8px;
+  background: #0e0e16;
+  color: #e6e6e6;
+}
+
+form input[type="submit"] {
+  background: #00e6b8;
+  color: #000;
+  font-weight: 700;
+}
+
+form input[type="submit"]:hover {
+  background: #41ffcf;
+}
+
+footer {
+  background: #11131e;
+  padding: 18px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  color: #9fd3ff;
+}
+
+.footer-nav a:hover {
+  color: #00e6b8;
+}
+
+.footer-credit {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    margin: auto;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
