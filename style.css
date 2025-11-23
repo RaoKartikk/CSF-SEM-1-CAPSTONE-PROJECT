@@ -1,37 +1,37 @@
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background: linear-gradient(135deg, #dfe9f3, #ffffff);
-    color: #1e1b4b;
+    background: linear-gradient(135deg, #0b1e39, #102a54);
+    color: #e6e8f5;
     margin: 0;
     line-height: 1.5;
 }
 
 h1, h2 {
-    color: #6d28d9;
+    color: #8ab4ff;
 }
 
 hr {
     height: 3px;
     border: none;
-    background-color: #94a3b8;
+    background-color: #3a4f77;
 }
 
 @keyframes colorShift {
-    0%   { color: #6d28d9; }
-    33%  { color: #2563eb; }
-    66%  { color: #db2777; }
-    100% { color: #6d28d9; }
+    0%   { color: #8ab4ff; }
+    33%  { color: #4f9dff; }
+    66%  { color: #ff79c6; }
+    100% { color: #8ab4ff; }
 }
 
 .header {
-    background-color: #ffffff;
+    background-color: #15294d;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 3px solid #6d28d9;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-bottom: 3px solid #4f9dff;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
@@ -41,7 +41,7 @@ hr {
 
 .nav1 a {
     text-decoration: none;
-    color: #2563eb;
+    color: #8ab4ff;
     font-weight: 600;
     margin: 0 12px;
     font-size: 18px;
@@ -50,16 +50,16 @@ hr {
 }
 
 .nav1 a:hover {
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     border-radius: 6px;
 }
 
 .about-div {
-    background-color: #ffffff;
+    background-color: #1c2f54;
     padding: 18px;
     margin-top: 90px;
     border-radius: 20px;
-    border-left: 5px solid #6d28d9;
+    border-left: 5px solid #4f9dff;
 }
 
 .about-content {
@@ -70,7 +70,7 @@ hr {
 .about-photo {
     width: 200px;
     height: 220px;
-    border: 2px solid #2563eb;
+    border: 2px solid #8ab4ff;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -82,25 +82,25 @@ hr {
 }
 
 .about-text {
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     padding: 14px;
     border-radius: 20px;
-    border-left: 5px solid #6d28d9;
+    border-left: 5px solid #4f9dff;
 }
 
 .about-text p {
     margin-bottom: 10px;
-    color: #1e1b4b;
+    color: #dce3ff;
 }
 
 .about-article h3 {
     text-align: center;
-    color: #2563eb;
+    color: #8ab4ff;
     animation: colorShift 0.7s infinite;
 }
 
 .project-article {
-    background-color: #ffffff;
+    background-color: #1c2f54;
     padding: 18px;
     border-radius: 20px;
     margin-top: 40px;
@@ -108,11 +108,11 @@ hr {
 }
 
 .project-article div {
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     padding: 14px;
     border-radius: 18px;
     margin-bottom: 12px;
-    border-left: 5px solid #6d28d9;
+    border-left: 5px solid #4f9dff;
 }
 
 .project-article p {
@@ -121,20 +121,21 @@ hr {
 
 .project-article a {
     display: inline-block;
-    background-color: #6d28d9;
-    color: white;
+    background-color: #4f9dff;
+    color: #0b1e39;
     padding: 8px 12px;
     border-radius: 14px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: 600;
 }
 
 .project-article a:hover {
-    background-color: #2563eb;
+    background-color: #8ab4ff;
 }
 
 .skills-article {
-    background-color: #ffffff;
+    background-color: #1c2f54;
     padding: 18px;
     border-radius: 20px;
     margin-top: 40px;
@@ -142,24 +143,25 @@ hr {
 
 .skills-article table {
     width: 100%;
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     border-collapse: collapse;
     border-radius: 10px;
 }
 
 .skills-article th, .skills-article td {
     padding: 12px;
-    border-bottom: 2px solid #6d28d9;
+    border-bottom: 2px solid #4f9dff;
     text-align: left;
+    color: #dce3ff;
 }
 
 .skills-article thead th {
-    background-color: #6d28d9;
-    color: white;
+    background-color: #4f9dff;
+    color: #0b1e39;
 }
 
 article {
-    background-color: #ffffff;
+    background-color: #1c2f54;
     padding: 18px;
     border-radius: 18px;
     margin-top: 40px;
@@ -170,14 +172,14 @@ form {
     flex-direction: column;
     max-width: 420px;
     margin: auto;
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     padding: 15px;
     border-radius: 20px;
 }
 
 form label {
     font-weight: 600;
-    color: #1e1b4b;
+    color: #dce3ff;
     font-size: 18px;
 }
 
@@ -187,25 +189,28 @@ form textarea {
     padding: 10px;
     font-size: 18px;
     border-radius: 10px;
-    border: 2px solid #94a3b8;
+    border: 2px solid #4f9dff;
+    background-color: #1c2f54;
+    color: white;
 }
 
 form input[type="submit"] {
-    background-color: #6d28d9;
-    color: white;
+    background-color: #4f9dff;
+    color: #0b1e39;
     border: none;
     padding: 12px;
     border-radius: 12px;
     font-size: 20px;
     margin-top: 12px;
+    font-weight: 700;
 }
 
 form input[type="submit"]:hover {
-    background-color: #2563eb;
+    background-color: #8ab4ff;
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: #1c2f54;
     padding: 15px;
     border-radius: 12px;
     margin-top: 40px;
@@ -213,11 +218,11 @@ footer {
 }
 
 footer p {
-    color: #1e1b4b;
+    color: #dce3ff;
 }
 
 .footer-nav a {
-    color: #db2777;
+    color: #ff79c6;
     font-weight: 600;
     margin: 0 6px;
     animation: colorShift 0.8s infinite;
@@ -228,7 +233,7 @@ footer p {
 }
 
 .footer-credit {
-    background-color: #e0e7ff;
+    background-color: #243d6b;
     padding: 8px;
     margin-top: 12px;
     border-radius: 12px;
