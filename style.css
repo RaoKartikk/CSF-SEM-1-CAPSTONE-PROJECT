@@ -7,9 +7,21 @@ body {
   line-height: 1.6;
 }
 
+@keyframes textColorChange {
+  0% { color: #00e6b8; }
+  33% { color: #9fd3ff; }
+  66% { color: #41ffcf; }
+  100% { color: #00e6b8; }
+}
+
+h1, h2, .footer-credit, nav a {
+  animation-name: textColorChange;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
 h1, h2 {
   font-weight: 700;
-  color: #00e6b8;
   letter-spacing: 1px;
 }
 
@@ -40,10 +52,10 @@ hr {
 
 .nav1 a {
   text-decoration: none;
-  color: #9fd3ff;
   margin: 0 15px;
   font-weight: 600;
   font-size: 17px;
+  color: #9fd3ff;
 }
 
 .nav1 a:hover {
@@ -203,8 +215,8 @@ footer {
 
 .footer-credit {
   margin-top: 10px;
-  color: #aaa;
   font-size: 14px;
+  color: #aaa;
 }
 
 @media (max-width: 600px) {
