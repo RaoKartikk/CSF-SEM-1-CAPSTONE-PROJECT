@@ -1,6 +1,6 @@
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background-color: #f3f4ff;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
     color: #1e1b4b;
     margin: 0;
     line-height: 1.5;
@@ -46,7 +46,7 @@ hr {
     margin: 0 12px;
     font-size: 18px;
     padding: 6px 10px;
-    animation: colorShift 1.6s infinite;
+    animation: colorShift 0.7s infinite;
 }
 
 .nav1 a:hover {
@@ -96,7 +96,7 @@ hr {
 .about-article h3 {
     text-align: center;
     color: #2563eb;
-    animation: colorShift 2.5s infinite;
+    animation: colorShift 0.7s infinite;
 }
 
 .project-article {
@@ -220,7 +220,7 @@ footer p {
     color: #db2777;
     font-weight: 600;
     margin: 0 6px;
-    animation: colorShift 1.8s infinite;
+    animation: colorShift 0.8s infinite;
 }
 
 .footer-nav a:hover {
@@ -232,7 +232,7 @@ footer p {
     padding: 8px;
     margin-top: 12px;
     border-radius: 12px;
-    animation: colorShift 1.2s infinite;
+    animation: colorShift 0.6s infinite;
 }
 
 @media (max-width: 600px) {
