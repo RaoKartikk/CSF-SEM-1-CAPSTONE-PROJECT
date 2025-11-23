@@ -1,94 +1,89 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #071226;
-  color: #e8eef6;
+  background-color: #081226;
+  color: #eef4fb;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* brand and animated color */
-@keyframes glowShift {
-  0%   { color: #ff0066; }
-  33%  { color: #00d1ff; }
-  66%  { color: #bfff00; }
-  100% { color: #ff0066; }
+@keyframes pulseColors {
+  0%   { color: #ff0044; text-shadow: 0 0 6px #ff0044; }
+  33%  { color: #00aaff; text-shadow: 0 0 8px #00aaff; }
+  66%  { color: #ffd600; text-shadow: 0 0 8px #ffd600; }
+  100% { color: #ff0044; text-shadow: 0 0 6px #ff0044; }
 }
 
-.header {
-  background-color: transparent;
-  padding: 18px 12px;
-  text-align: center;
-  border-bottom: 2px solid rgba(255,255,255,0.04);
-}
-
-.header .brand {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 0;
-  display: inline-block;
-  animation-name: glowShift;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.nav1 {
-  margin-top: 10px;
-}
-
-.nav1 a {
-  text-decoration: none;
-  color: #b8d6ff;
-  margin: 0 12px;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 6px 8px;
-  border-radius: 6px;
-  transition: background-color 0.18s;
-  animation-name: glowShift;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-
-.nav1 a:hover {
-  background-color: rgba(255,255,255,0.04);
-}
-
-/* main content container */
-main {
-  max-width: 1100px;
+.container {
+  max-width: 980px;
   margin: 28px auto;
   padding: 0 16px 60px;
 }
 
-/* about / hero card */
-.about-div {
-  background-color: #f7fbff;
-  color: #0b2030;
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(4,10,20,0.9);
+  padding: 14px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  z-index: 100;
+}
+
+.header-div-1 {
+  text-align: center;
+}
+
+.header .brand {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.03);
+}
+
+.nav1 {
+  margin-top: 8px;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: #cfeeff;
+  margin: 0 10px;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: transform 0.16s, background-color 0.16s;
+}
+
+.nav1 a:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255,255,255,0.03);
+}
+
+.hero {
+  margin-top: 18px;
+  background-color: rgba(255,255,255,0.03);
+  padding: 20px;
   border-radius: 14px;
-  padding: 22px;
-  margin-top: 20px;
-  box-shadow: 0 8px 30px rgba(2,8,23,0.6);
   display: flex;
   gap: 18px;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 0 10px 30px rgba(2,6,12,0.6);
 }
 
 .about-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 6px solid #071226;
-  flex: 0 0 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ddeaf7;
+  border: 4px solid rgba(255,255,255,0.06);
+  flex: 0 0 180px;
+  background-color: #0f2a3e;
 }
 
 .about-photo img {
@@ -96,148 +91,140 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 50%;
-  transition: transform 0.35s;
-}
-
-.about-photo img:hover {
-  transform: scale(1.04);
 }
 
 .about-text {
-  flex: 1 1 360px;
+  flex: 1 1 320px;
   padding: 6px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.02);
 }
 
-.about-text p {
-  margin: 8px 0;
-  color: #0b2030;
+h1 {
+  font-size: 28px;
+  margin: 0 0 8px 0;
+  animation-name: pulseColors;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-/* projects area as grid cards */
-.project-article {
-  margin-top: 26px;
-  display: block;
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #ffb3c9;
+}
+
+.section-card {
+  margin-top: 20px;
+  background-color: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(2,6,12,0.5);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
   margin-top: 12px;
 }
 
-.project-card {
-  background-color: #fff7e6;
-  color: #1b1b1b;
-  padding: 14px;
-  border-radius: 12px;
-  border-left: 6px solid #071226;
-  box-shadow: 0 6px 18px rgba(2,8,23,0.35);
+.project {
+  background-color: rgba(255,255,255,0.06);
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 6px solid rgba(255,255,255,0.04);
 }
 
-.project-card p {
+.project p {
   margin: 6px 0;
+  color: #d9eefc;
 }
 
-.project-card a {
+.project a {
   display: inline-block;
   text-decoration: none;
-  padding: 8px 12px;
-  background-color: #071226;
-  color: #fff7e6;
+  background-color: #ff0044;
+  color: #fff;
+  padding: 8px 10px;
   border-radius: 8px;
   font-weight: 700;
+  transition: background-color 0.18s, transform 0.12s;
 }
 
-.project-card a:hover {
-  opacity: 0.9;
+.project a:hover {
+  background-color: #ff66a3;
+  transform: translateY(-3px);
 }
 
-/* skills table with distinct look */
-.skills-article {
-  margin-top: 26px;
-  padding: 14px;
-  background-color: #e9f6ff;
-  border-radius: 12px;
-  color: #062233;
-}
-
-.skills-article table {
+.skills-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 8px;
 }
 
-.skills-article th,
-.skills-article td {
-  padding: 10px 8px;
-  text-align: left;
-  border-bottom: 1px solid rgba(7,18,30,0.06);
-  font-size: 14px;
-}
-
-.skills-article thead th {
-  background-color: #071226;
-  color: #ffffff;
+.skills-table th,
+.skills-table td {
   padding: 10px;
-  border-radius: 6px;
-  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  color: #dfeffb;
+  text-align: left;
 }
 
-/* contact form restyled */
-article.contact {
-  margin-top: 26px;
-  border-radius: 12px;
-  padding: 14px;
-  background-color: #fff9f0;
-  color: #10202a;
+.skills-table thead th {
+  background-color: rgba(255,255,255,0.02);
+  color: #fff;
+  font-weight: 800;
+}
+
+.contact-form {
+  margin-top: 14px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 480px;
+  max-width: 520px;
 }
 
 form label {
   font-weight: 700;
-  color: #071226;
+  color: #dff6ff;
 }
 
 form input,
 form textarea {
   padding: 10px;
-  border: 2px solid #071226;
+  border: 2px solid rgba(255,255,255,0.06);
   border-radius: 10px;
+  background-color: rgba(0,0,0,0.25);
+  color: #eef6ff;
   font-size: 15px;
-  background-color: #ffffff;
-  color: #071226;
 }
 
 form input[type="submit"] {
-  background-color: #071226;
-  color: #fff7e6;
+  background-color: #00aaff;
+  color: #061428;
   padding: 10px;
   border-radius: 10px;
-  font-weight: 700;
   border: none;
+  font-weight: 800;
   cursor: pointer;
+  transition: background-color 0.16s, transform 0.12s;
 }
 
 form input[type="submit"]:hover {
-  opacity: 0.95;
+  background-color: #66d8ff;
+  transform: translateY(-2px);
 }
 
-/* footer distinct */
 footer {
-  margin-top: 34px;
+  margin-top: 22px;
   padding: 18px 12px;
   text-align: center;
-  background-color: #071226;
-  color: #f1f8ff;
+  background-color: rgba(0,0,0,0.35);
   border-radius: 10px;
 }
 
@@ -245,33 +232,27 @@ footer {
   display: inline-block;
   margin-top: 8px;
   padding: 6px 12px;
-  background-color: #fbe8f0;
-  color: #071226;
   border-radius: 20px;
-  animation-name: glowShift;
-  animation-duration: 2.2s;
+  background-color: #ffd600;
+  color: #071226;
+  font-weight: 700;
+  animation-name: pulseColors;
+  animation-duration: 1.4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-/* small screen adjustments */
-@media screen and (max-width: 700px) {
-  .about-div {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.nav1 a,
+.footer-credit {
+  animation-name: pulseColors;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+}
 
-  .about-text {
-    width: 100%;
-    padding-top: 10px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  main {
-    padding: 0 12px 40px;
-  }
+@media screen and (max-width: 720px) {
+  .container { padding: 0 10px; margin: 18px auto; }
+  .hero { flex-direction: column; align-items: center; text-align: center; }
+  .about-photo { margin-bottom: 8px; }
+  h1 { font-size: 22px; }
+  .projects-grid { grid-template-columns: 1fr; }
 }
